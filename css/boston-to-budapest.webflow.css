@@ -1,0 +1,161 @@
+body {
+  font-family: Unna, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.left {
+  overflow: hidden;
+  height: 100vh;
+ /* background-color: #ffc01f;
+  background-image: -webkit-linear-gradient(45deg, #00537E, #3AA17E);
+  background-image: linear-gradient(45deg, #00537E, #3AA17E);*/
+}
+
+.right {
+  overflow: scroll;
+  height: 100%;
+  padding-left: 0px;
+  background-color: #f2f2f2;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+  margin-top: 225px;
+}
+
+.main {
+  height: 100vh;
+}
+
+.menu-line {
+  position: fixed;
+  top: 0px;
+  overflow: visible;
+  width: 115px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.item:hover {
+  background-color: rgba(0, 0, 0, .04);
+}
+
+.number {
+  width: 115px;
+  margin-right: 40px;
+  float: left;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  text-align: center;
+}
+
+.arrow {
+  width: 40px;
+  height: 1px;
+  margin-top: 36px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+  float: left;
+  background-color: #000;
+}
+
+.title {
+  float: left;
+}
+
+.num {
+  font-size: 1rem;
+}
+
+.letter {
+  position: absolute;
+  left: -10%;
+  bottom: 0px;
+  display: inline-block;
+  color: hsla(0, 0%, 95%, .2);
+  font-size: 16rem;
+}
+
+.places {
+  margin-top: 150px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.horiz-line {
+  width: 70px;
+  height: 2px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.place-h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.place-date {
+  padding-left: 50px;
+}
+
+.place-h4 {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.place-view {
+  margin-top: 10px;
+  margin-left: 0px;
+  padding: 12px 20px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.logo {
+  display: block;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map {
+  position: absolute;
+  left: 0px;
+  bottom: 1px;
+  z-index: 1;
+  height: 50%;
+  background-image: -webkit-linear-gradient(270deg, #000, #fff);
+  background-image: linear-gradient(180deg, #000, #fff);
+  opacity: 0.1;
+}
+

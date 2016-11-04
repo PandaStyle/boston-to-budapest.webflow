@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com -->
+<!--  Last Published: Fri Nov 04 2016 17:48:09 GMT+0000 (UTC)  -->
+<html data-wf-page="5803b541c19849ee7b372a10" data-wf-site="5803b541c19849ee7b372a0f">
+<head>
+  <meta charset="utf-8">
+  <title>Boston to Budapest</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/boston-to-budapest.webflow.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <style>
+    .letter {
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["PT Sans:400,400italic,700,700italic","Unna:regular","Vidaloka:regular","Cantata One:regular"]
+      }
+    });
+  </script>
+  <script src="js/modernizr.js" type="text/javascript"></script>
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="main w-row">
+    <div class="left w-col w-col-6">
+      <div class="places">
+        <div class="place">
+          <h2 class="letter">Boston</h2>
+          <div class="place-title">
+            <h2 class="place-h2">BOSTON</h2>
+          </div>
+          <div class="horiz-line"></div>
+          <div class="place-date">
+            <h4 class="place-h4">- / 02.01</h4><a class="place-view w-button" href="#">VIEW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right w-col w-col-6">
+      <div class="menu"></div>
+      <div class="menu-line"><img class="logo" src="images/untitled-1.png" width="50">
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+
+  <script>
+    const data = [{
+              num: "01",
+              dest: "Boston",
+              date: "- / 02.01",
+              color1: "#00537E",
+              color2: "#3AA17E"
+            },
+            {
+                    num: "02",
+                    dest: "LA - SF",
+                    date: "02.01 / 02.08",
+                    color1: "#D4145A",
+                    color2: "#FBB03B"
+            },
+            {
+                    num: "03",
+                    dest: "Hawaii",
+                    date: "02.08 / 02.17",
+              color1: "#2E3192",
+              color2: "#1BFFFF"
+            },
+            {
+                    num: "04",
+                    dest: "Fiji",
+                    date: "02.17 / 02.27",
+              color1: "#FB872B",
+              color2: "#D9E021"
+            },
+            {
+                    num: "05",
+                    dest: "New Zealand",
+                    date: "02.27 / 03.08",
+              color1: "#312A6C",
+              color2: "#852D91"
+            },
+            {
+                    num: "06",
+                    dest: "Australia",
+                    date: "03.08 / 03.21",
+              color1: "#852D91",
+              color2: "#FFFF96"
+            },
+            {
+                    num: "07",
+                    dest: "Bali",
+                    date: "03.21 / 03.29",
+              color1: "#B066FE",
+              color2: "#B066FE"
+            },
+            {
+                    num: "08",
+                    dest: "Singapore",
+                    date: "03.29 / 04.05",
+              color1: "#8E78FF",
+              color2: "#FC7D7B"
+            },
+            {
+                    num: "09",
+                    dest: "Thailand",
+                    date: "04.05 / 04.25",
+              color1: "#00537E",
+              color2: "#3AA17E"
+            },
+            {
+                    num: "10",
+                    dest: "Philippines",
+                    date: "04.25 / 05.04",
+              color1: "#F24645",
+              color2: "#EBC08D"
+            },
+            {
+                    num: "11",
+                    dest: "Shanghai",
+                    date: "05.04 / 05.10",
+              color1: "#00B7FF",
+              color2: "#FF5300"
+            },
+            {
+                    num: "12",
+                    dest: "Japan",
+                    date: "05.10 / 05.30",
+              color1: "#45145A",
+              color2: "#FBB03B"
+            },
+            {
+                    num: "13",
+                    dest: "Budapest",
+                    date: "05.31 / -",
+              color1: "#93278F",
+              color2: "#00A99D"
+            }];
+
+    $.fn.extend({
+      animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+          $(this).removeClass('animated ' + animationName);
+        });
+      }
+    });
+
+    $.each(data, (i, item) => {
+        let node = $(' <div class="item w-clearfix">\
+                <div class="number">\
+              <h3 class="num">' + item.num  + '</h3>\
+              </div>\
+              <div class="arrow"></div>\
+              <div class="title">\
+              <h3>' +  item.dest + '</h3>\
+              </div>\
+              </div>')
+
+        node.hover( () => {
+          $('.letter').html(item.dest);
+            $('.place-h2').html(item.dest).animateCss('slideInLeft');
+            $('.place-h4').html(item.date)
+            $('.left').attr('id', item.dest);
+        });
+      $('.menu').append(node);
+    });
+  </script>
+  <style>
+    .letter, .place-h2, .place-h4, .left {
+      -webkit-transition: all 2s ease-out;
+      -moz-transition: all 2s ease-out;
+      -ms-transition: all 2s ease-out;
+      -o-transition: all 2s ease-out;
+      transition: all 2s ease-out;
+
+      -webkit-animation-timing-function: cubic-bezier(1, 0, 0, 0.99);
+      -moz-animation-timing-function: cubic-bezier(1, 0, 0, 0.99);
+      -o-animation-timing-function: cubic-bezier(1, 0, 0, 0.99);
+      animation-timing-function: cubic-bezier(1, 0, 0, 0.99);
+    }
+
+    .left:before {border-radius: inherit;
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -100;
+      -webkit-transition: opacity .75s ease-in-out;
+      transition: opacity .75s ease-in-out;}
+    .left:before {
+      opacity: 0;
+    }
+
+    .left#Hawaii:before {
+      background-image: -webkit-linear-gradient(#ff4e50, #f9d423);
+      background-image: linear-gradient(#ff4e50, #f9d423);
+      opacity: 1;
+    }
+
+    .left#Boston:before {
+      background-image: -webkit-linear-gradient(#00B7FF, #00A99D);
+      background-image: linear-gradient(#00B7FF, #00A99D);
+      opacity: 1;
+    }
+
+
+  </style>
+
+
+</body>
+</html>
